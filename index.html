@@ -12,44 +12,80 @@
         <h1>notícias inúteis</h1>
         <p>Vou compartilhar as informações mais inúteis possíveis😁👍 </p>
         <style>
+            /* FUNDO DO SITE EM AZUL SUAVE */
+            body {
+                background-color: #e6f2ff;
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            /* BARRA DE TÍTULO EM CIANO COM BORDAS ARREDONDADAS */
             header {
-                background-color: #183C63;
+                background-color: #00bcd4;
                 color: #FFFFFF;
                 text-align: center;
                 max-width: 800px;
-                margin: 0 auto;
+                margin: 20px auto;
                 padding: 16px;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
 
+            /* CORPO DO BLOG SUAVE E CENTRALIZADO */
             main {
                 background-color: #FFFFFF;
                 color: #182963;
-                max-width: 800px; /* Alinha o conteúdo com o header */
-                margin: 0 auto;
-                padding: 16px;
+                max-width: 800px;
+                margin: 0 auto 40px auto;
+                padding: 24px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             }
 
+            /* ARTIGOS MAIS ESPAÇADOS E SUAVES */
             article {
                 display: flex;
-                margin-bottom: 30px; /* Separa um artigo do outro */
-                gap: 20px; /* Cria espaço entre a imagem e o texto */
+                margin-bottom: 40px;
+                gap: 24px;
             }
 
-            /* TAMANHO DAS IMAGENS DO BLOG (Aumentado de 80px para 150px) */
+            /* TAMANHO DAS IMAGENS PADRÃO COM BORDAS ARREDONDADAS */
             img {
-                width: 159px;
-                height: 190px;
-                object-fit: cover; /* Evita que a imagem fique esticada ou distorcida */
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 10px;
             }
 
-            /* TAMANHO ESPECÍFICO PARA A IMAGEM DA COPA (Opcional) */
-            .img-copa {
-                width: 300px;
-                height: auto; /* Mantém a proporção correta da foto */
+            /* IMAGENS DA COPA E DO NEYMAR DENTRO DO TEXTO */
+            .img-noticia {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                margin: 15px 0;
+                display: block;
+                border-radius: 10px;
             }
 
             .artigo-autor {
                 font-weight: bold;
+                margin-top: 10px;
+            }
+
+            /* BOTÕES SUAVES E ARREDONDADOS */
+            button {
+                background-color: #f0f2f5;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 20px;
+                cursor: pointer;
+                font-size: 14px;
+                transition: background 0.2s;
+                margin-right: 8px;
+            }
+
+            button:hover {
+                background-color: #e4e6e9;
             }
         </style>
     </header>
@@ -61,10 +97,9 @@
             <div>
                 <h2>Em uma final que ficará para a história, o Brasil massacrrou a Alemanha por 14 a 0, respondendo com virada olímpica ao traumático 7x1 de 2014 e levantando o sexto título mundial – o tão sonhado Hexa.</h2>
                 
-                <!-- Tag corrigida e com a nova classe de tamanho -->
-                <img src="Copa-do-Mundo.webp" class="img-copa" alt="Copa do Mundo">
+                <img src="Copa-do-Mundo.webp" class="img-noticia" alt="Copa do Mundo">
                 
-                <p><br>Por: Capitão Município</p>
+                <p class="artigo-autor">Por: Capitão Município</p>
                 <p>Em uma exibição histórica e catártica, a Seleção Brasileira goleou a Alemanha por 14 a 0 na grande final da Copa do Mundo, conquistando o tão sonhado hexacampeonato mundial. A partida, que terminou com o placar simbólico de 7 a 0 ainda no primeiro tempo e dobrou de tamanho na etapa final, funcionou como uma verdadeira redenção para o futebol nacional, apagando em definitivo o trauma do "7x1" de 2014 com direito a uma comemoração com volta olímpica e festa em todo o país.</p>
                 <button>❤️<span>0</span></button>
                 <button>👍<span>0</span></button>
@@ -77,6 +112,10 @@
 
             <div>
                 <h2>Neymar e Shrek São Flagrados fazendo coisas ilícitas após o jogo</h2>
+                
+                <!-- NOVA IMAGEM ADICIONADA AQUI -->
+                <img src="https://i.ytimg.com/vi/LsXc2zTcUMU/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgXChDMA8=&rs=AOn4CLCE1lWHwdQtoiAHyTEx9ILu5uZk0g" class="img-noticia" alt="Neymar e Shrek">
+
                 <p class="artigo-autor">Por: Bruxo do CEP</p>
                 <p>Após virada história contra a Alemanha, o craque Neymar Jr. se embreagou demais a ponto de, ao ver um fã fantasiado de Shrek, o ogro, ficou excitado pelos músculos do ogro e começou a rebolar para o fã fantasiado. O rapaz, sem saber o que fazer, ficou emocionado e só aceita o momento, os filhos do menino Ney ao olharem a cena, ficam chocados e falaaram para o pai: "Temos orgulho dos senhor pai!"</p>
                 <button>❤️<span>0</span></button>
