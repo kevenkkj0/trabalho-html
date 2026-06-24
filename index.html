@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-
 </head>
 
 <body>
@@ -26,16 +24,28 @@
             main {
                 background-color: #FFFFFF;
                 color: #182963;
-
+                max-width: 800px; /* Alinha o conteúdo com o header */
+                margin: 0 auto;
+                padding: 16px;
             }
 
             article {
                 display: flex;
+                margin-bottom: 30px; /* Separa um artigo do outro */
+                gap: 20px; /* Cria espaço entre a imagem e o texto */
             }
 
+            /* TAMANHO DAS IMAGENS DO BLOG (Aumentado de 80px para 150px) */
             img {
-                width: 80px;
-                height: 80px;
+                width: 150px;
+                height: 150px;
+                object-fit: cover; /* Evita que a imagem fique esticada ou distorcida */
+            }
+
+            /* TAMANHO ESPECÍFICO PARA A IMAGEM DA COPA (Opcional) */
+            .img-copa {
+                width: 300px;
+                height: auto; /* Mantém a proporção correta da foto */
             }
 
             .artigo-autor {
@@ -50,15 +60,17 @@
                 alt="Logotipo conceitual de tecnologia e educacao: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
             <div>
                 <h2>Em uma final que ficará para a história, o Brasil massacrrou a Alemanha por 14 a 0, respondendo com virada olímpica ao traumático 7x1 de 2014 e levantando o sexto título mundial – o tão sonhado Hexa.</h2>
-                <img src="Copa-do-Mundo.webp"
-                width="120px"
-                height="120px"
+                
+                <!-- Tag corrigida e com a nova classe de tamanho -->
+                <img src="Copa-do-Mundo.webp" class="img-copa" alt="Copa do Mundo">
+                
                 <p><br>Por: Capitão Município</p>
                 <p>Em uma exibição histórica e catártica, a Seleção Brasileira goleou a Alemanha por 14 a 0 na grande final da Copa do Mundo, conquistando o tão sonhado hexacampeonato mundial. A partida, que terminou com o placar simbólico de 7 a 0 ainda no primeiro tempo e dobrou de tamanho na etapa final, funcionou como uma verdadeira redenção para o futebol nacional, apagando em definitivo o trauma do "7x1" de 2014 com direito a uma comemoração com volta olímpica e festa em todo o país.</p>
                 <button>❤️<span>0</span></button>
                 <button>👍<span>0</span></button>
             </div>
         </article>
+
         <article>
             <img src="imagem-blog.png"
                 alt="Logotipo conceitual de tecnologia e educacao: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
@@ -71,7 +83,6 @@
                 <button>👍<span>0</span></button>
             </div>
         </article>
-
     </main>
 </body>
 
@@ -86,9 +97,6 @@
             texto.textContent++;
         }
     });
-
-
-
 </script>
 
 </html>
